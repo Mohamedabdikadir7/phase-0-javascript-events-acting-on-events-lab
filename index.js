@@ -22,8 +22,40 @@ document.addEventListener("keydown", function(e){
 
         }
 
-    }else{
-        alert("Click the right key")
-    }
+    } else if (e.key === 'ArrowUp'){
+
+        const newleft =dorger.style.left.replace("px", "");
+            const leftint =parseInt(newleft);
+            if(leftint <=380){
+                dorger.style.left = `${leftint+1}px`
+        
+            }
+   
     
- })
+ }
+
+// the up and down code 
+// else if(e.key ==="ArrowUp"){
+//     const newleft =dorger.style.left.replace("px", "");
+//     const leftint =parseInt(newleft);
+//     if(leftint <=360){
+//         dorger.style.left = `${leftint+1}px`
+
+//     }
+
+//     }else if(e.key ==="ArrowDown"){
+//         const newleft =dorger.style.down.replace("px", "");
+//         const leftint =parseInt(newleft);
+//         if(leftint <=360){
+//             dorger.style.left = `${leftint+1}px`
+
+//         }
+
+//     }
+//     else{
+//         alert("Click the right key")
+//     }
+    
+ 
+
+
